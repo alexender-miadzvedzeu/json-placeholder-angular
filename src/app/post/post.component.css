@@ -1,0 +1,19 @@
+.wrapper {
+  margin: 20px;
+  box-shadow: 0 0 4px 1px #5e5e5ba7;
+  border-radius: 3px;
+}
+.title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.body {
+  margin: 10px;  
+}
+a[routerLink] {
+  text-decoration: none;
+  color: #2e5b9b;
+  margin: 10px;
+}

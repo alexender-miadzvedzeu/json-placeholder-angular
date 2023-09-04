@@ -1,0 +1,10 @@
+<div *ngIf="!loading" class="wrapper">
+  <h1 class="title">Users</h1>
+  <a [routerLink]="['/users', user.id]" class="item" *ngFor="let user of users">
+    <span class="item-column name">{{ user.name }}</span>
+    <span class="item-column email">{{ user.email }}</span>
+    <span class="item-column city">{{ user.address.city }}, {{ user.address.street }}</span>
+  </a>
+</div>
+
+<app-loader *ngIf="loading"></app-loader>

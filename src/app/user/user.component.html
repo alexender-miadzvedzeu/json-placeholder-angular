@@ -1,0 +1,44 @@
+<div *ngIf="!loading" class="wrapper">
+  <h1 class="title">
+    User info
+  </h1>
+  <p class="row">
+    <span class="row-title">Name</span>
+    <span class="row-value">{{user?.name}}</span>
+  </p>
+  <p class="row">
+    <span class="row-title">User name</span>
+    <span class="row-value">{{user?.username}}</span>
+  </p>
+  <p class="row">
+    <span class="row-title">E-mail</span>
+    <span class="row-value">{{user?.email}}</span>
+    
+  </p>
+  <p class="row">
+    <span class="row-title">Phone</span>
+    <span class="row-value">{{user?.phone}}</span>
+  </p>
+  <p class="row">
+    <span class="row-title">Phone</span>
+    <span class="row-value">{{user?.website}}</span>
+  </p>
+  <h1 class="title">
+    Company info
+  </h1>
+  <p class="row">
+    <span class="row-title">Name</span>
+    <span class="row-value">{{user?.company?.name}}</span>
+  </p>
+  <p class="row">
+    <span class="row-title">BS</span>
+    <span class="row-value">{{user?.company?.bs}}</span>
+  </p>
+  <p class="row">
+    <span class="row-title">Catch phrase</span>
+    <span class="row-value">{{user?.company?.catchPhrase}}</span>
+  </p>
+  <a routerLink="/users">Go back</a>
+</div>
+
+<app-loader *ngIf="loading"></app-loader>

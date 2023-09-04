@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: minmax(min-content, auto) minmax(min-content, 30%) minmax(max-content, 30%);
+  margin: 15px 0;
+  padding: 10px 5px;
+  box-shadow: 0 0 4px 1px #5e5e5ba7;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.item-column {
+  color: #000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

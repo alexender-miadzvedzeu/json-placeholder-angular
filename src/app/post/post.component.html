@@ -1,0 +1,6 @@
+<div *ngIf="!loading" class="wrapper">
+  <h1 class="title">{{post?.title}}</h1>
+  <p class="body">{{post?.body}}</p>
+  <a routerLink="/posts">Go back</a>
+</div>
+<app-loader *ngIf="loading"></app-loader>
