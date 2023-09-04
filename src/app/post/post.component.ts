@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../../shared/types/post/posts.types';
+import { Post } from '../posts/posts.types';
 import { ActivatedRoute } from '@angular/router';
 import { PostsService } from '../../shared/services/post/posts.service';
 
@@ -22,7 +22,7 @@ export class PostComponent implements OnInit {
       const { id } = this.route.snapshot.params;
       this.loading = true;
       const response = await this.dataService.getPostsById(id);
-      const data = await response.json(); 
+      const data = await response.json();
       this.post = data;
       this.loading = false;
     } catch (error) {
